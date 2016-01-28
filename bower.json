@@ -1,0 +1,30 @@
+{
+  "name": "angular_social_auth",
+  "authors": [
+    "Abiodun shuaib <abiodun.shuaib.m@gmail.com>"
+  ],
+  "description": "A nifty popular api authentication module for popular soical media websites google and facebook currently supported",
+  "main": "./dist/angular-social-auth.js",
+  "moduleType": [
+    "amd"
+  ],
+  "keywords": [
+    "facebook",
+    "google",
+    "social",
+    "auth"
+  ],
+  "license": "MIT",
+  "homepage": "http://github.com/abiodun0",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "~1.4.9"
+  }
+}
