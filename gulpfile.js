@@ -14,6 +14,7 @@ var gulp = require('gulp'),
         },
     src: {
         mainJs: './src/app.js',
+        prodJs: './src/app-production.js'
     }
  };
 
@@ -27,14 +28,14 @@ var gulp = require('gulp'),
       .pipe(source('social_auth.js'))
       .pipe(gulp.dest(path.dist.js))
 });
+
 gulp.task('script-prod', function(){
     browserify({
-    entries: path.src.mainJs,
+    entries: path.src.prodJs,
     debug: true,
     })
       .transform(babelify, { presets: ['es2015'] })
       .bundle()
-      .pipe(source('social_auth-min.js'))
-      .pipe(uglify())
+      .pipe(source('social_auth.js'))
       .pipe(gulp.dest(path.dist.js))
 });

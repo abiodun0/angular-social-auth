@@ -6,3 +6,5 @@ coverage/
 .tmp/
 dist/
 .yo-rc.json
+.DS_Store/
+./src/config.js
